@@ -87,8 +87,6 @@ export default function Home() {
         <div className="timeline">{experience.map((item, index) => <article className="timeline-item" key={item.company}><div className="timeline-marker"><span>{String(index + 1).padStart(2, "0")}</span></div><p className="timeline-period">{item.period}</p><div className="timeline-role"><h3>{item.role}</h3><p>{item.company}</p></div><p className="timeline-description">{item.description}</p></article>)}</div>
       </section>
 
-      <section className="education-section page-shell" aria-labelledby="education-title"><div className="education-card"><div className="education-mark" aria-hidden="true">1<sup>st</sup></div><div><p className="section-kicker">Education</p><h2 id="education-title">Sheffield Hallam University</h2><p>International Events Management with Experiential Management</p></div><p className="education-year">2018 — 2021</p></div></section>
-
       <section className="contact-section page-shell section-space" id="contact" aria-labelledby="contact-title"><div className="contact-card">
         <p className="contact-kicker"><span className="status-dot" /> Open to the right conversation</p><h2 id="contact-title">Have a story worth <span className="serif-accent">sharing?</span></h2><p>Let&apos;s talk about how considered PR can make it impossible to overlook.</p><a className="button button-light" href="mailto:livy.blackett@gmail.com">livy.blackett@gmail.com <Arrow /></a>
       </div></section>
