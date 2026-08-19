@@ -22,7 +22,8 @@ npm run build
    (`npm run build`) and output settings.
 4. Deploy. No environment variables are required for this site.
 
-The included `vercel.json` pins the runtime region close to the UAE audience.
+The included `vercel.json` pins the framework preset. The portfolio is statically
+generated and distributed through Vercel's global CDN.
 
 ## Included Shape
 
