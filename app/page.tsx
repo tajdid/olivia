@@ -34,7 +34,6 @@ export default function Home() {
       </header>
 
       <section className="hero page-shell" id="top" aria-labelledby="hero-title">
-        <div className="eyebrow-row"><p className="eyebrow"><span className="status-dot" /> Dubai, UAE</p><p className="hero-role">PR Account Manager</p></div>
         <h1 id="hero-title">PR that earns <span className="serif-accent">attention</span> and builds lasting brand relevance.</h1>
         <div className="hero-bottom">
           <p className="hero-intro">I&apos;m Olivia — a communications specialist creating high-impact campaigns for luxury hospitality, lifestyle, wellness and F&amp;B brands across the UAE.</p>
@@ -92,7 +91,7 @@ export default function Home() {
       <section className="education-section page-shell" aria-labelledby="education-title"><div className="education-card"><div className="education-mark" aria-hidden="true">1<sup>st</sup></div><div><p className="section-kicker">Education</p><h2 id="education-title">Sheffield Hallam University</h2><p>International Events Management with Experiential Management</p></div><p className="education-year">2018 — 2021</p></div></section>
 
       <section className="contact-section page-shell section-space" id="contact" aria-labelledby="contact-title"><div className="contact-card">
-        <p className="contact-kicker"><span className="status-dot" /> Open to the right conversation</p><h2 id="contact-title">Have a story worth <span className="serif-accent">sharing?</span></h2><p>Let&apos;s talk about how considered PR can make it impossible to overlook.</p><a className="button button-light" href="mailto:livy.blackett@gmail.com">livy.blackett@gmail.com <Arrow /></a><div className="contact-corners" aria-hidden="true"><span>PR</span><span>DXB</span></div>
+        <p className="contact-kicker"><span className="status-dot" /> Open to the right conversation</p><h2 id="contact-title">Have a story worth <span className="serif-accent">sharing?</span></h2><p>Let&apos;s talk about how considered PR can make it impossible to overlook.</p><a className="button button-light" href="mailto:livy.blackett@gmail.com">livy.blackett@gmail.com <Arrow /></a>
       </div></section>
 
       <footer className="page-shell"><a className="wordmark" href="#top" aria-label="Olivia Blackett, back to top">OB<span className="wordmark-dot">.</span></a><p>Olivia Blackett — PR &amp; Communications</p><div><a href="https://www.linkedin.com/in/olivia-blackett-55094a19b/" target="_blank" rel="noreferrer">LinkedIn</a><a href="/Olivia-Blackett-CV-2026.pdf" download>Download CV</a></div></footer>
