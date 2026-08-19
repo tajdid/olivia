@@ -1,8 +1,6 @@
-# vinext-starter
+# Olivia Blackett
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+A one-page PR portfolio built with Next.js and ready to host on Vercel.
 
 ## Prerequisites
 
@@ -16,13 +14,20 @@ npm run dev
 npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+## Deploy with Vercel
+
+1. Push the repository to GitHub.
+2. In Vercel, choose **Add New > Project** and import the repository.
+3. Vercel will detect Next.js automatically. Keep the default build command
+   (`npm run build`) and output settings.
+4. Deploy. No environment variables are required for this site.
+
+The included `vercel.json` pins the runtime region close to the UAE audience.
 
 ## Included Shape
 
 - edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
+- `vercel.json` contains the Vercel project defaults
 - `db/schema.ts` starts intentionally empty
 - `examples/d1/` contains an optional D1 example surface
 - `drizzle.config.ts` supports local migration generation when needed

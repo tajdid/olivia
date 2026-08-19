@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./hero-photo.css";
 
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://olivia-blackett.openai.site"),
+  metadataBase: new URL(productionHost ? `https://${productionHost}` : "http://localhost:3000"),
   title: "Olivia Blackett — PR & Communications",
   description: "Dubai-based PR Account Manager creating high-impact communications for luxury hospitality, lifestyle, wellness and F&B brands across the UAE.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },

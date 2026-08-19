@@ -26,10 +26,12 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 
 import Image from "next/image";
 import AvailabilityBanner from "./AvailabilityBanner";
+import MotionController from "./MotionController";
 
 export default function Home() {
   return (
     <main>
+      <MotionController />
       <header className="site-header page-shell">
         <a className="wordmark" href="#top" aria-label="Olivia Blackett, back to top">OB<span className="wordmark-dot">.</span></a>
         <nav aria-label="Main navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
