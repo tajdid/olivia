@@ -1,3 +1,69 @@
+.availability-banner {
+  min-height: 66px;
+  margin-top: 22px;
+  padding: 12px 14px 12px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 28px;
+  border: 1px solid rgba(75, 36, 60, 0.16);
+  border-radius: 18px;
+  background: var(--sage);
+  color: var(--plum);
+}
+
+.availability-message {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.availability-message p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.availability-message strong {
+  font-weight: 900;
+}
+
+.availability-types {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.availability-types span {
+  padding: 8px 12px;
+  border: 1px solid rgba(75, 36, 60, 0.23);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.availability-banner > a {
+  min-height: 42px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 999px;
+  background: var(--plum);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+
+.availability-banner > a:hover {
+  transform: translateY(-2px);
+}
+
 .hero-feature {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
@@ -72,6 +138,19 @@
 }
 
 @media (max-width: 900px) {
+  .availability-banner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .availability-types {
+    grid-column: 1;
+  }
+
+  .availability-banner > a {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
   .hero-feature {
     grid-template-columns: minmax(0, 1fr) 220px;
   }
@@ -82,6 +161,34 @@
 }
 
 @media (max-width: 620px) {
+  .availability-banner {
+    margin-top: 14px;
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    border-radius: 16px;
+  }
+
+  .availability-message {
+    align-items: flex-start;
+  }
+
+  .availability-message p {
+    font-size: 15px;
+  }
+
+  .availability-types {
+    grid-column: auto;
+    flex-wrap: wrap;
+  }
+
+  .availability-banner > a {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .hero {
     min-height: auto;
     padding-bottom: 62px;

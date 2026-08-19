@@ -35,6 +35,18 @@ export default function Home() {
         <a className="header-cta" href="mailto:livy.blackett@gmail.com">Let&apos;s talk <Arrow /></a>
       </header>
 
+      <aside className="availability-banner page-shell" aria-label="Current availability">
+        <div className="availability-message">
+          <span className="status-dot" aria-hidden="true" />
+          <p><strong>Currently available</strong> for the right next opportunity.</p>
+        </div>
+        <div className="availability-types" aria-label="Opportunity types">
+          <span>Full-time roles</span>
+          <span>Freelance projects</span>
+        </div>
+        <a href="mailto:livy.blackett@gmail.com?subject=Opportunity%20for%20Olivia">Start a conversation <Arrow /></a>
+      </aside>
+
       <section className="hero page-shell" id="top" aria-labelledby="hero-title">
         <div className="hero-feature">
           <h1 id="hero-title">PR that earns <span className="serif-accent">attention</span> and builds lasting brand relevance.</h1>
