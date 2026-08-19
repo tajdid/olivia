@@ -24,6 +24,8 @@ const brands = ["Four Seasons", "PUMA", "SONOS", "ST. REGIS", "CORINTHIA", "GAIA
 const skills = ["PR strategy", "Media relations", "Press releases", "Influencer campaigns", "Event execution", "Brand messaging", "Crisis communications", "Performance reporting", "Project management", "Vuelio", "Canva", "Microsoft Office"];
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main>
@@ -34,7 +36,19 @@ export default function Home() {
       </header>
 
       <section className="hero page-shell" id="top" aria-labelledby="hero-title">
-        <h1 id="hero-title">PR that earns <span className="serif-accent">attention</span> and builds lasting brand relevance.</h1>
+        <div className="hero-feature">
+          <h1 id="hero-title">PR that earns <span className="serif-accent">attention</span> and builds lasting brand relevance.</h1>
+          <figure className="hero-portrait">
+            <Image
+              src="/olivia-portrait.jpg"
+              alt="Olivia Blackett working on her laptop"
+              width={1086}
+              height={1448}
+              sizes="(max-width: 900px) 100vw, 32vw"
+              priority
+            />
+          </figure>
+        </div>
         <div className="hero-bottom">
           <p className="hero-intro">I&apos;m Olivia — a communications specialist creating high-impact campaigns for luxury hospitality, lifestyle, wellness and F&amp;B brands across the UAE.</p>
           <div className="hero-actions" aria-label="Contact and profile links">

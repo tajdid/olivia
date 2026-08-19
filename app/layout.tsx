@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./hero-photo.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://olivia-blackett.openai.site"),
