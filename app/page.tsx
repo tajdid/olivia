@@ -40,7 +40,6 @@ export default function Home() {
           <div className="hero-actions" aria-label="Contact and profile links">
             <a className="button button-primary" href="mailto:livy.blackett@gmail.com">Email Olivia <Arrow /></a>
             <a className="button button-secondary" href="https://www.linkedin.com/in/olivia-blackett-55094a19b/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
-            <a className="text-link" href="/Olivia-Blackett-CV-2026.pdf" download>Download CV ↓</a>
           </div>
         </div>
         <div className="hero-stamp" aria-hidden="true"><span>STRATEGY</span><i>•</i><span>STORIES</span><i>•</i><span>IMPACT</span></div>
