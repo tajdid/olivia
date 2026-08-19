@@ -25,6 +25,7 @@ const skills = ["PR strategy", "Media relations", "Press releases", "Influencer 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 import Image from "next/image";
+import AvailabilityBanner from "./AvailabilityBanner";
 
 export default function Home() {
   return (
@@ -34,18 +35,6 @@ export default function Home() {
         <nav aria-label="Main navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
         <a className="header-cta" href="mailto:livy.blackett@gmail.com">Let&apos;s talk <Arrow /></a>
       </header>
-
-      <aside className="availability-banner page-shell" aria-label="Current availability">
-        <div className="availability-message">
-          <span className="status-dot" aria-hidden="true" />
-          <p><strong>Currently available</strong> for the right next opportunity.</p>
-        </div>
-        <div className="availability-types" aria-label="Opportunity types">
-          <span>Full-time roles</span>
-          <span>Freelance projects</span>
-        </div>
-        <a href="mailto:livy.blackett@gmail.com?subject=Opportunity%20for%20Olivia">Start a conversation <Arrow /></a>
-      </aside>
 
       <section className="hero page-shell" id="top" aria-labelledby="hero-title">
         <div className="hero-feature">
@@ -70,6 +59,8 @@ export default function Home() {
         </div>
         <div className="hero-stamp" aria-hidden="true"><span>STRATEGY</span><i>•</i><span>STORIES</span><i>•</i><span>IMPACT</span></div>
       </section>
+
+      <AvailabilityBanner />
 
       <section className="brand-strip" aria-labelledby="brands-title">
         <div className="brand-heading page-shell"><p className="section-kicker" id="brands-title">Brands I&apos;ve worked with</p></div>

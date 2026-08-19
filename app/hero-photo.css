@@ -1,15 +1,34 @@
 .availability-banner {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
   min-height: 66px;
-  margin-top: 22px;
-  padding: 12px 14px 12px 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(75, 36, 60, 0.2);
+  background: var(--sage);
+  color: var(--plum);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+.availability-banner.is-visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.availability-inner {
+  min-height: 46px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: center;
   gap: 28px;
-  border: 1px solid rgba(75, 36, 60, 0.16);
-  border-radius: 18px;
-  background: var(--sage);
-  color: var(--plum);
 }
 
 .availability-message {
@@ -44,7 +63,7 @@
   white-space: nowrap;
 }
 
-.availability-banner > a {
+.availability-inner > a {
   min-height: 42px;
   padding: 0 16px;
   display: inline-flex;
@@ -60,8 +79,18 @@
   transition: transform 0.2s ease;
 }
 
-.availability-banner > a:hover {
+.availability-inner > a:hover {
   transform: translateY(-2px);
+}
+
+.availability-inner > a svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hero-feature {
@@ -138,7 +167,7 @@
 }
 
 @media (max-width: 900px) {
-  .availability-banner {
+  .availability-inner {
     grid-template-columns: 1fr auto;
   }
 
@@ -146,7 +175,7 @@
     grid-column: 1;
   }
 
-  .availability-banner > a {
+  .availability-inner > a {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
@@ -162,31 +191,49 @@
 
 @media (max-width: 620px) {
   .availability-banner {
-    margin-top: 14px;
-    padding: 18px;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    border-radius: 16px;
+    min-height: 58px;
+    padding: 8px 0;
+  }
+
+  .availability-inner {
+    min-height: 42px;
+    grid-template-columns: minmax(0, 1fr) 42px;
+    gap: 12px;
   }
 
   .availability-message {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .availability-message p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
+  .availability-detail,
   .availability-types {
-    grid-column: auto;
-    flex-wrap: wrap;
+    display: none;
   }
 
-  .availability-banner > a {
+  .availability-inner > a {
     grid-column: auto;
     grid-row: auto;
-    width: 100%;
-    justify-content: space-between;
+    width: 42px;
+    min-height: 42px;
+    padding: 0;
+    justify-self: end;
+    gap: 0;
+  }
+
+  .availability-cta-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .hero {
