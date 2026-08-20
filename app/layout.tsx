@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import "./hero-photo.css";
 
@@ -13,4 +14,4 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Olivia Blackett — PR & Communications", description: "PR that earns attention and builds lasting brand relevance.", images: ["/og.png"] },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-GB"><body>{children}</body></html>; }
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-GB"><body>{children}<Analytics /></body></html>; }
