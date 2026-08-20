@@ -22,10 +22,9 @@ const experience = [
 
 const brands = ["Four Seasons", "PUMA", "SONOS", "ST. REGIS", "CORINTHIA", "GAIA", "SEXY FISH", "BAR DES PRÉS", "KIRA", "BREWDOG"];
 const skills = ["PR strategy", "Media relations", "Press releases", "Influencer campaigns", "Event execution", "Brand messaging", "Crisis communications", "Performance reporting", "Project management", "Vuelio", "Canva", "Microsoft Office"];
-const Arrow = () => <span aria-hidden="true">↗</span>;
-
 import Image from "next/image";
 import AvailabilityBanner from "./AvailabilityBanner";
+import { Arrow, ServiceArrow } from "./Icons";
 import MotionController from "./MotionController";
 
 export default function Home() {
@@ -87,7 +86,7 @@ export default function Home() {
       <section className="services-section section-space" id="services" aria-labelledby="services-title"><div className="page-shell">
         <div className="section-label light"><span>02</span><p>What I do</p></div>
         <div className="services-heading"><h2 id="services-title">From a strong story<br />to a <span className="serif-accent">standout moment.</span></h2><p>Strategic communications shaped around what a brand needs now — and where it wants to go next.</p></div>
-        <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}><span className="service-number">{service.number}</span><h3>{service.title}</h3><p>{service.text}</p><span className="card-arrow" aria-hidden="true">↗</span></article>)}</div>
+        <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}><span className="service-number">{service.number}</span><h3>{service.title}</h3><p>{service.text}</p><ServiceArrow /></article>)}</div>
       </div></section>
 
       <section className="metrics-section page-shell section-space" aria-labelledby="impact-title">

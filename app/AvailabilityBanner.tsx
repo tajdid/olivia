@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { EnvelopeSimple } from "@phosphor-icons/react";
 
 export default function AvailabilityBanner() {
   const [visible, setVisible] = useState(false);
@@ -34,10 +35,7 @@ export default function AvailabilityBanner() {
         </div>
         <a href="mailto:livy.blackett@gmail.com?subject=Opportunity%20for%20Olivia" aria-label="Email Olivia about an opportunity">
           <span className="availability-cta-label">Start a conversation</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3.75 5.75h16.5v12.5H3.75z" />
-            <path d="m4.5 6.5 7.5 6 7.5-6" />
-          </svg>
+          <EnvelopeSimple aria-hidden="true" size={18} weight="bold" />
         </a>
       </div>
     </aside>
