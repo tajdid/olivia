@@ -12,7 +12,7 @@ const metrics = [
 ];
 
 const experience = [
-  { period: "Jul 2025 — Present", company: "CM Comms", role: "PR Account Manager", description: "Leading press office activity and campaigns for luxury hospitality, lifestyle and wellness clients across the UAE — spanning launches, media visits, influencer collaborations and performance reporting." },
+  { period: "Jul 2025 — Apr 2026", company: "CM Comms", role: "PR Account Manager", description: "Leading press office activity and campaigns for luxury hospitality, lifestyle and wellness clients across the UAE — spanning launches, media visits, influencer collaborations and performance reporting." },
   { period: "May 2025 — Jul 2025", company: "The Brill Collective", role: "Freelance PR Senior Account Executive", description: "Supported BrewDog’s Dubai launch through regional media and influencer guest lists, on-site delivery, real-time logistics and post-event coverage." },
   { period: "Oct 2024 — May 2025", company: "Bacchus Agency", role: "PR Senior Account Executive", description: "Developed strategic PR campaigns across lifestyle and F&B, led media relations, shaped press materials, managed events and translated campaign performance into actionable reporting." },
   { period: "Sep 2023 — Oct 2024", company: "StickyGinger", role: "PR Account Executive", description: "Managed tailored PR programmes from pitching, seeding and interviews through KPI tracking — building strong journalist and influencer relationships along the way." },
